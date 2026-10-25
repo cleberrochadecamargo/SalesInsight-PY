@@ -150,11 +150,20 @@ def inspecionar_dados(caminho="vendas.csv"):
 
     ## LIMPA E CONVERTE OS DADOS DO ARQUIVO DE VENDAS.
 def limpar_dados(caminho="vendas.csv"):
-    
+    # def limpar_dados(...) = cria uma função que recebe o caminho do arquivo.
+    # caminho="vendas.csv" = define o arquivo padrão caso nenhum outro caminho
+    # seja informado.
 
     with open(caminho, mode="r", newline="", encoding="utf-8") as arquivo:
         leitor = csv.DictReader(arquivo)
         registros = list(leitor)
+    # open(..., mode="r") = abre o arquivo para leitura.
+    # encoding="utf-8" = permite ler corretamente caracteres como os acentos
+    # de “Eletrônicos”.
+    # csv.DictReader(arquivo) = interpreta cada linha como um dicionário,
+    # usando os nomes das colunas como chaves.
+    # list(leitor) = transforma os registros lidos em uma lista para que
+    # possam ser percorridos mais de uma vez.
 
     registros_limpos = []
 
@@ -163,11 +172,14 @@ def limpar_dados(caminho="vendas.csv"):
             coluna: valor.strip()
             for coluna, valor in registro.items()
         }
-        # percorre cada campo do registro e remove espaços, no início
-        # e no fim do texto.
+        # valor.strip() = percorre cada campo do registro e remove espaços, no início
+        # e no fim do texto e campo contendo apenas espaços passa a ser uma string
+        # vazia, "".
 
         if any(valor == "" for valor in registro.values()):
             continue
+        # registro.values() = obtém os valores do dicionário.
+        # valor == "" = verifica se um valor está vazio.
         # any(...) = verifica se pelo menos uma condição é verdadeira.
         # continue = pula o registro atual e passa para o próximo.
 
@@ -178,31 +190,39 @@ def limpar_dados(caminho="vendas.csv"):
             registro["preco_unitario"] = float(registro["preco_unitario"])
         except ValueError:
             continue
+        # try/except = tenta fazer as conversões. Se algum valor não puder ser convertido,
+        # gera um ValueError e impede que um valor inválido interrompe todo o programa.
+        # Converter os valores para números.
         # int() = converte a quantidade para inteiro.
         # float() = converte a quantidade para inteiro.
-        # try/except = impede que um valor inválido interrompe todo o programa.
-
+        
         registros_limpos.append(registro)
-        # devolve a lista limpa para que outras funções possam utilizá-la posteriormente.
+        # Se o registro passou pelas verificações e conversões, ele é adicionado à lista
+        # registros_limpos 
 
     print("\n--- LIMPEZA DOS DADOS ---")
     print(f"Registros originais: {len(registros)}")
     print(f"Registros válidos: {len(registros_limpos)}")
     print(f"Registros descartados: {len(registros) - len(registros_limpos)}")
+    # print() = mostram a quantidade de registros originais, válidos e descartados.
 
-    return registros_limpos
+    return registros_limpos 
+    # Devolve a lista limpa para que outras funções possam utilizá-la posteriormente.
 
 
     ## CALCULA A RECEITA TOTAL E A FAIXA DE PREÇO DE CADA VENDA.
 def calcular_metricas(registros):
-    # recebe a lista de registros limpos.
+    # Define uma função chamada calcular_metricas que recebe uma lista de vendas.
 
     for registro in registros:
         receita = registro["quantidade"] * registro["preco_unitario"]
         registro["receita_total"] = round(receita,2)
-    # for registro in registros = percorre cada venda.
-    # registro["quantidade"] * registro["preco_unitario"] = multiplica
-    # a quantidade pelo preço unitário.
+    # for registro in registros = percorre essa lista, analisando uma venda por vez.
+    # registro = representa um dicionário com os dados de uma venda, como quantidade,
+    # preço e categoria.
+    # registro["quantidade"] * registro["preco_unitario"] = multiplica a quantidade
+    # pelo preço unitário.
+    # registro["receita_total"] = adiciona ao dicionário o campo receita_total.
     # round(receita, 2) = arredonda o resultado para duas casas decimais.
     
         if receita < 500:
@@ -213,10 +233,14 @@ def calcular_metricas(registros):
 
         else:
             registro["faica_preco"] = "Alto"
-    # if, elif e else = classificam a venda em uma das três faixas.            
+    # if, elif e else = classificam a venda em uma das três faixas.
+    # se if verdadeiro = "Baixo"; se if falso e elif verdadeiro = "Médio";
+    # se nenhuma condição antetior for verdadeira, classifica como "Alto".           
 
     print("\n--- CÁLCULO DAS MÉTRICAS ---")
     print(f"Vendas processadas: {len(registros)}")
+    # print() = exibe uma mensagem no terminal.
+    # len(registros) = informa quantas vendas foram processadas.
 
     return registros
     # return registros = devolve os registros atualizados, agora com receita_total e faixa_preco. 
