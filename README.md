@@ -51,11 +51,18 @@ Mini_Projeto_Modulo_01/
 
 No terminal, dentro da pasta do projeto, execute:
 
-```bash
+```powershell
 py main.py
 ```
+Durante a execução, o programa realiza as seguintes etapas:
 
-O programa gera o conjunto de dados fictícios, realiza as etapas de inspeção, limpeza e análise e exporta os resultados.
+1. Gera um conjunto de dados fictícios de vendas com 120 registros.
+2. Inspeciona os dados e identifica campos vazios.
+3. Remove registros com campos vazios ou valores inválidos e converte os tipos necessários.
+4. Calcula a receita total e classifica as vendas por faixa de receita.
+5. Consolida as receitas por categoria, região e no total geral.
+6. Segmenta os clientes de acordo com o gasto acumulado.
+7. Exporta os resultados para os arquivos CSV e JSON na pasta `outputs/`.
 
 ## 6. Regras de análise
 

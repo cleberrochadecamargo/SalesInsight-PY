@@ -1,135 +1,139 @@
 {
     "receita_por_categoria": {
-        "Roupas": 166577.75,
-        "Eletrônicos": 150890.27,
-        "Casa": 177333.06,
-        "Alimentos": 162179.38
+        "Roupas": 106743.88,
+        "Alimentos": 270314.59,
+        "Casa": 138080.65,
+        "Eletrônicos": 119812.34
     },
     "receita_por_regiao": {
-        "Sul": 122551.67,
-        "Nordeste": 139710.77,
-        "Norte": 121594.52,
-        "Centro-Oeste": 123464.99,
-        "Sudeste": 149658.51
+        "Norte": 74524.53,
+        "Nordeste": 127190.85,
+        "Centro-Oeste": 138142.06,
+        "Sudeste": 123708.4,
+        "Sul": 171385.62
     },
-    "receita_geral": 656980.46,
-    "quantidade_clientes": 29,
+    "receita_geral": 634951.46,
+    "quantidade_clientes": 30,
     "segmentos_clientes": {
-        "9": {
-            "gasto_acumulado": 34517.92,
-            "segmento": "Ouro"
-        },
-        "10": {
-            "gasto_acumulado": 37022.44,
-            "segmento": "Ouro"
-        },
-        "30": {
-            "gasto_acumulado": 23008.15,
-            "segmento": "Ouro"
-        },
-        "28": {
-            "gasto_acumulado": 12639.25,
-            "segmento": "Ouro"
-        },
-        "6": {
-            "gasto_acumulado": 18442.57,
-            "segmento": "Ouro"
-        },
-        "15": {
-            "gasto_acumulado": 32542.11,
-            "segmento": "Ouro"
-        },
-        "27": {
-            "gasto_acumulado": 14214.36,
+        "16": {
+            "gasto_acumulado": 32948.43,
             "segmento": "Ouro"
         },
         "21": {
-            "gasto_acumulado": 8987.6,
-            "segmento": "Ouro"
-        },
-        "7": {
-            "gasto_acumulado": 32151.52,
-            "segmento": "Ouro"
-        },
-        "25": {
-            "gasto_acumulado": 47563.27,
-            "segmento": "Ouro"
-        },
-        "3": {
-            "gasto_acumulado": 24846.7,
-            "segmento": "Ouro"
-        },
-        "4": {
-            "gasto_acumulado": 12184.86,
-            "segmento": "Ouro"
-        },
-        "20": {
-            "gasto_acumulado": 28695.48,
-            "segmento": "Ouro"
-        },
-        "29": {
-            "gasto_acumulado": 17135.77,
-            "segmento": "Ouro"
-        },
-        "26": {
-            "gasto_acumulado": 23828.07,
-            "segmento": "Ouro"
-        },
-        "8": {
-            "gasto_acumulado": 21025.42,
-            "segmento": "Ouro"
-        },
-        "17": {
-            "gasto_acumulado": 44328.58,
-            "segmento": "Ouro"
-        },
-        "22": {
-            "gasto_acumulado": 40385.4,
-            "segmento": "Ouro"
-        },
-        "1": {
-            "gasto_acumulado": 9159.76,
-            "segmento": "Ouro"
-        },
-        "18": {
-            "gasto_acumulado": 19339.06,
-            "segmento": "Ouro"
-        },
-        "2": {
-            "gasto_acumulado": 19748.9,
-            "segmento": "Ouro"
-        },
-        "16": {
-            "gasto_acumulado": 39936.14,
-            "segmento": "Ouro"
-        },
-        "24": {
-            "gasto_acumulado": 14293.65,
-            "segmento": "Ouro"
-        },
-        "11": {
-            "gasto_acumulado": 15565.68,
+            "gasto_acumulado": 33808.84,
             "segmento": "Ouro"
         },
         "5": {
-            "gasto_acumulado": 17527.18,
+            "gasto_acumulado": 998.6,
+            "segmento": "Bronze"
+        },
+        "12": {
+            "gasto_acumulado": 19733.07,
             "segmento": "Ouro"
         },
-        "13": {
-            "gasto_acumulado": 5674.48,
-            "segmento": "Prata"
-        },
-        "23": {
-            "gasto_acumulado": 32315.69,
+        "18": {
+            "gasto_acumulado": 18771.06,
             "segmento": "Ouro"
         },
         "19": {
-            "gasto_acumulado": 9255.85,
+            "gasto_acumulado": 24203.9,
             "segmento": "Ouro"
         },
-        "12": {
-            "gasto_acumulado": 644.6,
-            "segmento": "Bronze"
+        "13": {
+            "gasto_acumulado": 18769.94,
+            "segmento": "Ouro"
+        },
+        "6": {
+            "gasto_acumulado": 14387.85,
+            "segmento": "Ouro"
+        },
+        "22": {
+            "gasto_acumulado": 55637.57,
+            "segmento": "Ouro"
+        },
+        "1": {
+            "gasto_acumulado": 31179.08,
+            "segmento": "Ouro"
+        },
+        "28": {
+            "gasto_acumulado": 18912.59,
+            "segmento": "Ouro"
+        },
+        "10": {
+            "gasto_acumulado": 33639.48,
+            "segmento": "Ouro"
+        },
+        "3": {
+            "gasto_acumulado": 16023.15,
+            "segmento": "Ouro"
+        },
+        "15": {
+            "gasto_acumulado": 26927.5,
+            "segmento": "Ouro"
+        },
+        "4": {
+            "gasto_acumulado": 12153.66,
+            "segmento": "Ouro"
+        },
+        "17": {
+            "gasto_acumulado": 28763.94,
+            "segmento": "Ouro"
+        },
+        "26": {
+            "gasto_acumulado": 21206.32,
+            "segmento": "Ouro"
+        },
+        "27": {
+            "gasto_acumulado": 38144.75,
+            "segmento": "Ouro"
+        },
+        "23": {
+            "gasto_acumulado": 28094.36,
+            "segmento": "Ouro"
+        },
+        "8": {
+            "gasto_acumulado": 20147.94,
+            "segmento": "Ouro"
+        },
+        "30": {
+            "gasto_acumulado": 20120.5,
+            "segmento": "Ouro"
+        },
+        "24": {
+            "gasto_acumulado": 10723.67,
+            "segmento": "Ouro"
+        },
+        "14": {
+            "gasto_acumulado": 13054.31,
+            "segmento": "Ouro"
+        },
+        "7": {
+            "gasto_acumulado": 13168.35,
+            "segmento": "Ouro"
+        },
+        "20": {
+            "gasto_acumulado": 20765.59,
+            "segmento": "Ouro"
+        },
+        "9": {
+            "gasto_acumulado": 14834.16,
+            "segmento": "Ouro"
+        },
+        "29": {
+            "gasto_acumulado": 6375.29,
+            "segmento": "Prata"
+        },
+        "11": {
+            "gasto_acumulado": 28114.56,
+            "segmento": "Ouro"
+        },
+        "25": {
+            "gasto_acumulado": 6683.36,
+            "segmento": "Prata"
+        },
+        "2": {
+            "gasto_acumulado": 6659.64,
+            "segmento": "Prata"
         }
     }
 }
